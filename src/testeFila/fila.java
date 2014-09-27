@@ -27,7 +27,7 @@ public class fila {
     }
     
     // METODO INSERIR: Responsável por inserir itens no final da fila,
-    //  Se tenho uma fila com 4 items sendo [0] [1] [2] [3] o meu maxSize é o número 3;
+    //  Se tenho uma fila com 5 items sendo [0] [1] [2] [3] [4] o meu maxSize é o número 4;
     
     public void inserir(long j) 
     {
@@ -50,21 +50,25 @@ public class fila {
            return temp;
     }
     
-    public long vercomecofila() // ve o item nó começo da fila
+    //METODO "vercomecofila" responsável por retornar o item no começo da fila
+    public long vercomecofila() 
     {
         return filaArray[comecofila];
     }
-    
-    public boolean filavazia() // Verdadeiro se a fila estiver vazia
+   
+    //METODO "filavazia" responsável por verificar se a fila esta vazia
+    public boolean filavazia() 
     {
         return (nItems ==0);
     }
     
-    public boolean filacheia() //Verdadeiro se a fila estiver vazia
+    // METODO "filacheia" responsável por verificar se a pilha esta cheia
+    public boolean filacheia() 
     {
         return (nItems==maxSize);
     }
     
+    // METODO "size" responsável por retornar a número de itens na fila
     public int size() // Número de itens na fila
     {
         return nItems;
