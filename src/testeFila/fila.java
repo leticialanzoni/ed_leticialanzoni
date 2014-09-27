@@ -37,14 +37,37 @@ public class fila {
         nItems ++;                  // insere mais um item.
     }
     
-    public long remover() // remove o item na frente da fila
+    //METODO REMOVER: Responsável por remover os itens no começo da fila
+    //
+    public long remover() 
     {
-        long  temp = filaArray[comecofila];
-        if(comecofila == maxSize)
+        long  temp = filaArray[comecofila]; // obtém o valor e incrementa
+                                            // no comeco da fila 
+        if(comecofila == maxSize)           
             comecofila = 0;
-        nItems-;
-        return temp;
+           nItems--;
+        
+           return temp;
     }
     
+    public long vercomecofila() // ve o item nó começo da fila
+    {
+        return filaArray[comecofila];
+    }
     
+    public boolean filavazia() // Verdadeiro se a fila estiver vazia
+    {
+        return (nItems ==0);
+    }
+    
+    public boolean filacheia() //Verdadeiro se a fila estiver vazia
+    {
+        return (nItems==maxSize);
+    }
+    
+    public int size() // Número de itens na fila
+    {
+        return nItems;
+    }
 }
+
