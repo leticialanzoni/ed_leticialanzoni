@@ -39,7 +39,7 @@ public class fila {
     
     public long remover() // remove o item na frente da fila
     {
-        long = temp = filaArray[comecofila];
+        long  temp = filaArray[comecofila];
         if(comecofila == maxSize)
             comecofila = 0;
         nItems-;
